@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <base href="/" />
+        <meta charset="utf-8">
+        <title>Shift Swap</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="fragment" content="!">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="shiftSwap/layout/assets/styles/style.css">
+
+</head>
+
+<body ng-app="shiftSwap">
+    <h1>Shift Swap</h1>
+
+    <div class="everything">
+	<ui-view></ui-view>
+    </div>
+<script src="shiftSwap/shiftSwap.module.js"></script>
+
+<script src="shiftSwap/features/openShifts/openShifts.module.js"></script>
+<script src="shiftSwap/features/openShifts/openShifts.controller.js"></script>
+<script src="shiftSwap/features/openShifts/openShifts.routes.js"></script>
+
+<script src="shiftSwap/features/postShifts/postShifts.module.js"></script>
+<script src="shiftSwap/features/postShifts/postShifts.controller.js"></script>
+<script src="shiftSwap/features/postShifts/postShifts.routes.js"></script>
+
+<script src="shiftSwap/features/settings/settings.module.js"></script>
+<script src="shiftSwap/features/settings/settings.controller.js"></script>
+<script src="shiftSwap/features/settings/settings.routes.js"></script>
+
+<script src="shiftSwap/features/components/navbar/navbar.module.js"></script>
+<script src="shiftSwap/features/components/navbar/navbar.directive.js"></script>
+
+</body>
+</html>
