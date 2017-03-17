@@ -2,7 +2,7 @@ angular
 	.module('shiftSwap.postShifts')
 	.controller('PostCtrl', PostCtrl);
 
-function PostCtrl($scope) {
+function PostCtrl($scope, routes) {
 	var vm = this;
 
 	vm.shift = {
@@ -13,6 +13,7 @@ function PostCtrl($scope) {
 	}
 
 	vm.addShift = function() {
+		routes.createShift(vm.shift);
 		console.log(vm.shift)
 	}
 

@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-var db = require('./../app/services/connection.js'); 
-var ShiftSwap = require('./../app/services/shift.model.js'); 
+//var db = require('./app/shiftSwap/services/connection.js');
+//var ShiftSwap = require('./app/shiftSwap/services/shift.model.js');
 
 // Require bluebird as promise 
 var Promise = require('bluebird');
