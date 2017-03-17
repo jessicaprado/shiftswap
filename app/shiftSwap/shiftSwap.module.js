@@ -3,6 +3,9 @@ angular
 		//global dependencies
 		'ui.router',
 
+		//angular Material
+		'ngMaterial',
+
 		//feeatures
 		'shiftSwap.openShifts',
 		'shiftSwap.postShifts',

@@ -1,3 +1,4 @@
-angular.module('shiftSwap.component.navbar', [
+angular
+	.module('shiftSwap.component.navbar', [
 
 	]);
