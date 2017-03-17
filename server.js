@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser')
 PORT = process.env.PORT || 3000;
 
-//var db = require('./db/connection.js');
+var db = require('./app/shiftSwap/services/connection.js');
 //var Todo = require('./db/todo.models.js');
 
 app.use(express.static(__dirname + '/app'));
