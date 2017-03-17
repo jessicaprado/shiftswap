@@ -1,2 +1,17 @@
 <navbar></navbar>
-<shift-form></shift-form>
+<div class="postShiftForm">
+
+	<form>
+	  	Shift Type:<br>
+	  	<input type="text" ng-model="PostVM.shift.type" name="type"><br>
+	  	Shift Date<br>
+	  	<input type="date"  ng-model="PostVM.shift.date" name="date">
+	 	<br>
+	  	Shift Start Time<br>
+	  	<input type="time" name="startTime"><br>
+	  	Shift End Time<br>
+	  	<input type="time" name="endTime"><br>
+	  	<input type="button" name="submit" value="submit" ng-click="PostVM.addShift()">
+	</form>
+
+</div>
