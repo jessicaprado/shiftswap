@@ -7,18 +7,13 @@ function RouteService($http) {
 	return {
 		createShift: function(routes) {
 			console.log(routes);
-			// $http({
-			// 	method: 'POST',
-			// 	url: '/api/shifts',
-			// 	data: {
-			// 		type: '',
-			// 		date: '',
-			// 		startTime: '',
-			// 		endTime: '',
-			// 	},
-			// }).then(function(response){
-			// 	console.log(response);
-			// })
+			$http({
+				method: 'POST',
+				url: '/api/shifts',
+				data: routes,
+			}).then(function(response){
+				console.log(response);
+			})
 		}
 	}
 }

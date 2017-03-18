@@ -15,7 +15,7 @@ app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
 app.use(bodyParser.text({ type: 'text/html' }));
 
 //var getRoute = require("./api/get-items.js")(app);
-var postRoute = require("./api/post-shifts.js")(app);
+var postRoute = require("./app/api/post-shifts.js")(app);
 
 app.listen(PORT, function() {
 	console.log ("I am listening on PORT " + PORT);
