@@ -9,6 +9,7 @@ angular
 		//feeatures
 		'shiftSwap.openShifts',
 		'shiftSwap.postShifts',
+		'shiftSwap.settings',
 		])
 	.config(appConfig);
 

@@ -18,7 +18,14 @@ function Navbar() {
 function NavbarCtrl() {
 	var vm = this;
 
-	vm.navbarButtons = [
-		'Open Shifts', 'Post Shifts', 'Settings'
-	]
+	vm.navbarButtons = [{
+		title: 'Open Shifts',
+		link: 'openshifts'
+		}, {
+		title: 'Post Shifts',
+		link: 'postshifts'
+		}, {
+		title: 'Settings',
+		link: 'settings'
+	}]
 }
