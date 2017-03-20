@@ -8,6 +8,4 @@ function OpenCtrl($scope, routes) {
 	vm.openShifts = [];
 	
 	routes.displayShift(vm.openShifts)
-	console.log(vm.openShifts);
-
 }

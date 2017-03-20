@@ -15,8 +15,10 @@ function Shifts() {
 	}
 }
 
-function ShiftsCtrl() {
+function ShiftsCtrl($http, routes) {
 	var vm = this;
+
+
 
 	
 }

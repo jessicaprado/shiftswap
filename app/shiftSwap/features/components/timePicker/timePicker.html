@@ -1,0 +1,13 @@
+<md-content id="content" layout="column" flex ng-app="app" ng-controller="MainCtrl as ctrl">
+
+            
+            <input type="time" ng-model="test" mdp-time-picker />
+    
+            <div>
+              <h4 class="md-subhead">Using $mdpTimePicker service</h4>
+              <md-button class="md-raised md-warn" ng-click="ctrl.showTimePicker($event)" aria-label="show picker">show picker</md-button>
+              <p>
+                {{ currentTime | date:'HH:mm' }}
+              </p>
+  </md-content>
+</md-content>

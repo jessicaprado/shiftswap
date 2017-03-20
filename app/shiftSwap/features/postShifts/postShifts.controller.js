@@ -6,15 +6,26 @@ function PostCtrl($scope, routes) {
 	var vm = this;
 
 	vm.shift = {
-		type: '',
-		date: '',
-		startTime: '',
-		endTime: '',
-	}
+			type: '',
+			date: '',
+			startTime: '',
+			endTime: '',
+		};
+
+	resetView();
+
+	function resetView() {
+		vm.shift = {
+			type: '',
+			date: '',
+			startTime: '',
+			endTime: '',
+		}
+	};
 
 	vm.addShift = function() {
 		routes.createShift(vm.shift);
-		console.log(vm.shift)
+		resetView();
 	}
 
 }
