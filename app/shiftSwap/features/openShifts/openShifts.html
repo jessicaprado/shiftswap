@@ -2,7 +2,7 @@
 
 <navbar></navbar>
 <h2>Open</h2>
-<div ng-repeat="shift in OpenVM.openShifts">
+<div ng-repeat="shift in OpenVM.openShifts | orderBy: 'date' ">
 	<p>{{shift.date | date : "fullDate"}}<br>
 	{{shift.startTime | date : "h:mma"}} - {{shift.endTime | date : "h:mma"}}<br>
 	{{shift.text}}<br>

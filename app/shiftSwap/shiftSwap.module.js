@@ -3,8 +3,8 @@ angular
 		//global dependencies
 		'ui.router',
 
-		//angular Material
-		'ngMaterial',
+		//time picker
+		'moment-picker',
 
 		//feeatures
 		'shiftSwap.openShifts',

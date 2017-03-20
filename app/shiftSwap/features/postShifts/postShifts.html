@@ -8,7 +8,8 @@
 	  	<input type="date"  ng-model="PostVM.shift.date" name="date">
 	 	<br>
 	  	Shift Start Time<br>
-	  	<input type="time"  ng-model="PostVM.shift.startTime" name="startTime"><br>
+	  	<time-picker ng-model="PostVM.shift.startTime" name="startTime"></time-picker>
+	  	<br>
 	  	Shift End Time<br>
 	  	<input type="time"  ng-model="PostVM.shift.endTime" name="endTime"><br>
 	  	<input type="button" name="submit" value="submit" ng-click="PostVM.addShift()">

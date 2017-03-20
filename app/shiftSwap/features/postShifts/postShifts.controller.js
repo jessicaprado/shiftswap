@@ -25,7 +25,9 @@ function PostCtrl($scope, routes) {
 
 	vm.addShift = function() {
 		routes.createShift(vm.shift);
+		console.log(vm.shift);
 		resetView();
+		
 	}
 
 }
