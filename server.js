@@ -14,6 +14,10 @@ app.use(bodyParser.json({ type: 'application/*+json' }));
 app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
 app.use(bodyParser.text({ type: 'text/html' }));
 
+//passport JS
+var dotenv = require('dotenv');
+dotenv.load();
+
 //var getRoute = require("./api/get-items.js")(app);
 var postRoute = require("./app/api/post-shifts.js")(app);
 var getRoute = require("./app/api/get-shifts.js")(app);
