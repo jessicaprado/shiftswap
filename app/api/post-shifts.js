@@ -16,6 +16,7 @@ module.exports = function(app) {
 	 	})
 
 		shifts.save(function(err, doc){
+			console.log(doc);
 			if(err) throw err
 		})
 	})

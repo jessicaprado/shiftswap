@@ -11,10 +11,10 @@ var ShiftSwap = new Schema ({
 		type: Date
 	},
 	startTime: {
-		type: Date
+		type: String
 	},
 	endTime: {
-		type: Date
+		type: String
 	}
 })
 

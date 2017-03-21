@@ -15,6 +15,7 @@ function TimePicker() {
 	}
 }
 
-function TimePickerCtrl() {
+function TimePickerCtrl($scope) {
 	var vm = this;
+
 }
