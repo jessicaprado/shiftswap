@@ -12,6 +12,7 @@ function PostCtrl($scope, routes) {
 			date: '',
 			startTime: '',
 			endTime: '',
+			accepted: false,
 		};
 
 	resetView();
@@ -22,6 +23,7 @@ function PostCtrl($scope, routes) {
 			date: '',
 			startTime: '',
 			endTime: '',
+			accepted: false,
 		}
 	};
 
