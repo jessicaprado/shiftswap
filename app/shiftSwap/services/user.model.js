@@ -11,10 +11,6 @@ var Fb = mongoose.Schema({
         token: String,
         name: String
     },
-    shift: [{
-        type: Schema.Types.ObjectId,
-        ref: "ShiftSwap"
-    }]
 });
 // methods ======================
 // generating a hash

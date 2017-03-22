@@ -19,10 +19,10 @@ var ShiftSwap = new Schema ({
 	accepted: {
 		type: Boolean 
 	},
-	user: [{
-		type: Schema.Types.ObjectId,
-        ref: "Fb"
-	}]
+	postedBy: {
+		type: mongoose.Schema.Types.ObjectId,
+		ref: 'Fb'
+	}
 })
 
 var ShiftSwap = mongoose.model('ShiftSwap', ShiftSwap);
