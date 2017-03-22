@@ -13,7 +13,7 @@ function RouteService($http) {
 				data: routes,
 			}).then(function(response){
 				
-				console.log(response);
+				
 			})
 		},
 
@@ -28,7 +28,7 @@ function RouteService($http) {
 			})
 		}
 
-        acceptShift: function(routes) {
+        /*acceptShift: function(routes) {
             $http({
                 method: 'GET',
                 url: '/api/myshifts',
@@ -37,6 +37,6 @@ function RouteService($http) {
                     routes.push(element);
                 });
             })
-        }
+        }*/
 	}
 }
