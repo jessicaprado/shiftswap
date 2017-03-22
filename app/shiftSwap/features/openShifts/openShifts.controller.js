@@ -11,4 +11,7 @@ function OpenCtrl($scope, routes) {
 
 	//start of ng-click to accept shifts
     vm.acceptedShifts = [];
+    vm.acceptShift = function() {
+        console.log("sup")
+    }
 }

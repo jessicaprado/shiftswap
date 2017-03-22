@@ -6,6 +6,6 @@
 	<p>{{shift.date | date : "fullDate"}}<br>
 	{{shift.startTime | date : "h:mma"}} - {{shift.endTime | date : "h:mma"}}<br>
 	{{shift.text}}<br>
-	<button>Accept Shift</button>
+	<button ng-click="OpenVM.acceptShift()">Accept Shift</button>
 	</p>
 </div>

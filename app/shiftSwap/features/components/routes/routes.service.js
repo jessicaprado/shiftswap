@@ -27,5 +27,16 @@ function RouteService($http) {
 				});
 			})
 		}
+
+        acceptShift: function(routes) {
+            $http({
+                method: 'GET',
+                url: '/api/myshifts',
+            }).then(function(response){
+                response.data.forEach(function(element){
+                    routes.push(element);
+                });
+            })
+        }
 	}
 }

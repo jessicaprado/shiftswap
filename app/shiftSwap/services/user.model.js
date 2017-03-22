@@ -3,17 +3,18 @@ var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
 
 // define the schema for our user model
+var Schema = mongoose.Schema;
+
 var Fb = mongoose.Schema({
-    username: String,
-    password: String,
-    email: String,
-    firstName: String,
-    lastName: String,
     facebook: {
         id: String,
         token: String,
         name: String
-    }
+    },
+    shift: [{
+        type: Schema.Types.ObjectId,
+        ref: "ShiftSwap"
+    }]
 });
 // methods ======================
 // generating a hash
