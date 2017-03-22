@@ -8,13 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="fragment" content="!">
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- load fontawesome -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
     <!-- Angular Material Dependencies -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script> 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script> 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script> 
-    
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Angular Material Javascript now available via Google CDN; version 0.9.4 used here -->
     <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
@@ -28,6 +34,7 @@
 
 <body ng-app="shiftSwap">
     <h1>Shift Swap</h1>
+
 
 	<ui-view></ui-view>
     
@@ -44,6 +51,14 @@
 <script src="shiftSwap/features/settings/settings.module.js"></script>
 <script src="shiftSwap/features/settings/settings.controller.js"></script>
 <script src="shiftSwap/features/settings/settings.routes.js"></script>
+
+<script src="shiftSwap/features/myshifts/myshifts.module.js"></script>
+<script src="shiftSwap/features/myshifts/myshifts.controller.js"></script>
+<script src="shiftSwap/features/myshifts/myshifts.routes.js"></script>
+
+<script src="shiftSwap/features/login/login.module.js"></script>
+<script src="shiftSwap/features/login/login.controller.js"></script>
+<script src="shiftSwap/features/login/login.routes.js"></script>
 
 <script src="shiftSwap/features/components/navbar/navbar.module.js"></script>
 <script src="shiftSwap/features/components/navbar/navbar.directive.js"></script>

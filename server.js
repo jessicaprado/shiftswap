@@ -15,8 +15,23 @@ app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
 app.use(bodyParser.text({ type: 'text/html' }));
 
 //passport JS
+var passport = require('passport');
+require('./app/shiftSwap/config/passport')(passport); // pass passport for configuration
 var dotenv = require('dotenv');
 dotenv.load();
+
+//Cookie and session
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+app.use(session({
+    secret: 'this is the secret'
+}));
+app.use(cookieParser());
+app.use(passport.initialize());
+app.use(passport.session());
+
+// routes ======================================================================
+require('./app/shiftSwap/sessions/passport.routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
 //var getRoute = require("./api/get-items.js")(app);
 var postRoute = require("./app/api/post-shifts.js")(app);

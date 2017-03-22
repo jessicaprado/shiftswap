@@ -10,6 +10,8 @@ angular
 		'shiftSwap.openShifts',
 		'shiftSwap.postShifts',
 		'shiftSwap.settings',
+        'shiftSwap.login',
+        'shiftSwap.myShifts',
 		])
 	.config(appConfig);
 

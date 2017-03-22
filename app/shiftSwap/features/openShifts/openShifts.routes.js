@@ -5,7 +5,7 @@ angular
 function openConfig($stateProvider) {
 	$stateProvider.state({
 		name: 'openshifts',
-		url: '/',
+		url: '/openshifts',
 		templateUrl: '/shiftSwap/features/openShifts/openShifts.html',
 		controller: 'OpenCtrl',
 		controllerAs: 'OpenVM'

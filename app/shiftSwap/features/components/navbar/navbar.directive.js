@@ -25,7 +25,11 @@ function NavbarCtrl() {
 		title: 'Post Shifts',
 		link: 'postshifts'
 		}, {
+        title: 'My Shifts',
+        link: 'myshifts'
+		},
+		{
 		title: 'Settings',
 		link: 'settings'
-	}]
+		}]
 }
