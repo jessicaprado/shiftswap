@@ -20,7 +20,7 @@ var ShiftSwap = new Schema ({
 		type: Boolean 
 	},
 	postedBy: {
-		type: mongoose.Schema.Types.ObjectId,
+		type: Schema.Types.ObjectId,
 		ref: 'Fb'
 	}
 })

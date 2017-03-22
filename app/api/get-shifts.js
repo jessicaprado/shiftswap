@@ -9,13 +9,13 @@ mongoose.Promise = Promise;
 module.exports = function(app) {
 	app.get('/api/shifts', function(req, res){
 	 	ShiftSwap.find({})
-	 	
+
 	 	.populate('Fb')
 
 	 	.exec(function(err, doc){
-	 		console.log(doc);
+	 		
 		 	if (err) throw err;
-		 	res.json(data);
+		 	res.json(doc);
 		})
 	})
 }

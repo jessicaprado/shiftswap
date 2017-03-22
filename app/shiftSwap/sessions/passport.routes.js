@@ -49,6 +49,7 @@ module.exports = function(app, passport) {
         passport.authenticate ('facebook'));
 
     app.get('/auth/facebook/callback', function (req, res, next) {
+        
         var authenticator = passport.authenticate ('facebook', {
             successRedirect: '/#/openshifts',
             failureRedirect: '/'

@@ -4,7 +4,7 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 var configAuth       = require('./oauth');
 // load up the user model
 var User             = require('../services/user.model.js');
-
+var localStorage     = require('localStorage');
 // expose this function to our app using module.exports
 module.exports = function(passport) {
 
@@ -51,12 +51,16 @@ module.exports = function(passport) {
 
         // facebook will send back the token and profile
         function(token, refreshToken, profile, done) {
+
+            
             // asynchronous
             process.nextTick(function() {
 
                 // find the user in the database based on their facebook id
                 User.findOne({ 'facebook.id' : profile.id }, function(err, user) {
+                    
 
+                    localStorage.setItem('profile.id', profile.id);
                     // if there is an error, stop everything and return that
                     // ie an error connecting to the database
                     if (err)
@@ -73,7 +77,8 @@ module.exports = function(passport) {
                         newUser.facebook.id    = profile.id; // set the users facebook id
                         newUser.facebook.token = token; // we will save the token that facebook provides to the user
                         newUser.facebook.name  = profile.displayName; // look at the passport user profile to see how names are returned
-
+                        
+                     
                         // save our user to the database
                         newUser.save(function(err) {
                             if (err)
@@ -81,6 +86,8 @@ module.exports = function(passport) {
 
                             // if successful, return the new user
                             return done(null, newUser);
+
+
                         });
                     }
 
