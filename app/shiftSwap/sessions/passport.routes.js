@@ -31,7 +31,7 @@ module.exports = function(app, passport) {
                         if (err) {
                             return next(err);
                         }
-                        res.json(user);
+                        console.log(user);
                     });
                 });
             }
@@ -40,7 +40,7 @@ module.exports = function(app, passport) {
 
     // Facebook auth routes
     app.get('/auth/facebook', function authenticateFacebook (req, res, next) {
-            
+
             req.session.returnTo = '/#' + req.query.returnTo;
             next ();
         },
@@ -49,9 +49,13 @@ module.exports = function(app, passport) {
     app.get('/auth/facebook/callback', function (req, res, next) {
         
         var authenticator = passport.authenticate ('facebook', {
+            scope: ['email'],
             successRedirect: '/#/openshifts',
             failureRedirect: '/'
         });
+
+
+        console.log(req);
 
         delete req.session.returnTo;
         authenticator (req, res, next);
