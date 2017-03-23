@@ -33,8 +33,8 @@ module.exports = function(passport) {
         function(token, refreshToken, profile, done) {
 
 
-            localStorage.setItem('token', token);
-            console.log(token);
+
+
             // asynchronous
             process.nextTick(function() {
 

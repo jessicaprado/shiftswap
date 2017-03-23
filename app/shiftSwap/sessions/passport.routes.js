@@ -1,4 +1,5 @@
 var Fb = require("../services/user.model.js");
+var localStorage = require('localStorage');
 
 module.exports = function(app, passport) {
     
@@ -49,13 +50,11 @@ module.exports = function(app, passport) {
     app.get('/auth/facebook/callback', function (req, res, next) {
         
         var authenticator = passport.authenticate ('facebook', {
-            scope: ['email'],
             successRedirect: '/#/openshifts',
             failureRedirect: '/'
-        });
-
-
-        console.log(req);
+        }, function(err, user){
+            console.log(user);
+        })
 
         delete req.session.returnTo;
         authenticator (req, res, next);

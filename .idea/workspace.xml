@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57ba5207-7139-4b65-9875-e0e293709dbd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/config/passport.js" afterPath="$PROJECT_DIR$/app/shiftSwap/config/passport.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js" afterPath="$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js" />
     </list>
@@ -40,31 +41,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="passport.routes.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="passport.routes.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+                <state relative-caret-position="295">
+                  <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="oauth.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/shiftSwap/config/oauth.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="passport.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="passport.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/config/passport.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+                <state relative-caret-position="55">
+                  <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -113,8 +104,8 @@
           <file leaf-file-name="user.model.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/services/user.model.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -136,7 +127,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/shiftSwap/features/postShifts/postShifts.html" />
-        <option value="$PROJECT_DIR$/app/shiftSwap/config/oauth.js" />
         <option value="$PROJECT_DIR$/app/api/passport.routes.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/features/login/login.controller.js" />
@@ -158,8 +148,9 @@
         <option value="$PROJECT_DIR$/app/api/post-myshifts.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/services/user.model.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/services/shift.model.js" />
-        <option value="$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js" />
+        <option value="$PROJECT_DIR$/app/shiftSwap/config/oauth.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/config/passport.js" />
+        <option value="$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js" />
       </list>
     </option>
   </component>
@@ -174,9 +165,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-5" />
-    <option name="y" value="646" />
+    <option name="y" value="676" />
     <option name="width" value="2048" />
-    <option name="height" value="512" />
+    <option name="height" value="482" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -785,15 +776,15 @@
       <updated>1490045647233</updated>
       <workItem from="1490045654609" duration="701000" />
       <workItem from="1490097445663" duration="4403000" />
-      <workItem from="1490141840110" duration="7374000" />
+      <workItem from="1490141840110" duration="10160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12478000" />
+    <option name="totallyTimeSpent" value="15264000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="646" width="2048" height="512" extended-state="0" />
+    <frame x="-5" y="676" width="2048" height="482" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1162,34 +1153,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/services/user.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/config/oauth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js">
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/services/user.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        <state relative-caret-position="55">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding />
         </state>
       </provider>
