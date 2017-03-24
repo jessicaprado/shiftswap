@@ -1,62 +1,22 @@
-var Fb = require("../services/user.model.js");
-var localStorage = require('localStorage');
-
 module.exports = function(app, passport) {
-    
-
-    // handle logout
-    app.post("/logout", function(req, res) {
-        req.logOut();
-        res.send(200);
-    })
-
     // loggedin
     app.get("/loggedin", function(req, res) {
         res.send(req.isAuthenticated() ? req.user : '0');
     });
 
-    // signup
-    app.post("/signup", function(req, res) {
-        Fb.User.findOne({
-            username: req.body.username
-        }, function(err, user) {
-            if (user) {
-                res.json(null);
-                return;
-            } else {
-                var newUser = new Fb.User();
-                newUser.username = req.body.username.toLowerCase();
-                newUser.password = newUser.generateHash(req.body.password);
-                newUser.save(function(err, user) {
-                    req.login(user, function(err) {
-                        if (err) {
-                            return next(err);
-                        }
-                        console.log(user);
-                    });
-                });
-            }
-        });
-    });
 
     // Facebook auth routes
-    app.get('/auth/facebook', function authenticateFacebook (req, res, next) {
+    app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
 
-            req.session.returnTo = '/#' + req.query.returnTo;
-            next ();
-        },
-        passport.authenticate ('facebook'));
+    app.get('/auth/facebook/callback',
+        passport.authenticate('facebook', {
+            successRedirect : '/#/openshifts',
+            failureRedirect : '/'
+        }));
 
-    app.get('/auth/facebook/callback', function (req, res, next) {
-        
-        var authenticator = passport.authenticate ('facebook', {
-            successRedirect: '/#/openshifts',
-            failureRedirect: '/'
-        }, function(err, user){
-            console.log(user);
-        })
-
-        delete req.session.returnTo;
-        authenticator (req, res, next);
+    // handle logout
+    app.post("/logout", function(req, res) {
+        req.logOut();
+        res.send(200);
     })
 };

@@ -4,7 +4,8 @@ angular
 
 function OpenCtrl($scope, routes) {
 	var vm = this;
-
+    localStorage.getItem('id');
+    console.log(id);
 	//get call to display shifts
 	vm.openShifts = [];
 	routes.displayShift(vm.openShifts)

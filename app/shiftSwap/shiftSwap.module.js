@@ -5,6 +5,8 @@ angular
 
 		//time picker
 		'moment-picker',
+        'ngRoute',
+
 
 		//feeatures
 		'shiftSwap.openShifts',
@@ -18,3 +20,4 @@ angular
 function appConfig($urlRouterProvider) {
 	$urlRouterProvider.otherwise('/');
 }
+

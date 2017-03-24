@@ -1,12 +1,9 @@
 // load all the things we need
-var LocalStrategy    = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
 var configAuth       = require('./oauth');
-var localStorage = require('localStorage');
-
-
 // load up the user model
 var User             = require('../services/user.model.js');
+
 // expose this function to our app using module.exports
 module.exports = function(passport) {
 
@@ -31,9 +28,6 @@ module.exports = function(passport) {
 
         // facebook will send back the token and profile
         function(token, refreshToken, profile, done) {
-
-
-
 
             // asynchronous
             process.nextTick(function() {
