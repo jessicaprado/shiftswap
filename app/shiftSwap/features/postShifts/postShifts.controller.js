@@ -4,7 +4,7 @@ angular
 
 function PostCtrl($scope, routes) {
 	var vm = this;
-
+    vm.name = localStorage.getItem('name');
 
 
 	vm.shift = {
@@ -13,6 +13,7 @@ function PostCtrl($scope, routes) {
 			startTime: '',
 			endTime: '',
 			accepted: false,
+			postedBy: vm.name
 		};
 
 	resetView();
@@ -24,11 +25,14 @@ function PostCtrl($scope, routes) {
 			startTime: '',
 			endTime: '',
 			accepted: false,
+            postedBy: vm.name
 		}
 	};
 
 	vm.addShift = function() {
+        console.log(vm.shift);
 		routes.createShift(vm.shift);
+
 		resetView();
 	}
 

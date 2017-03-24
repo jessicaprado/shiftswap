@@ -7,17 +7,18 @@ var Promise = require('bluebird');
 mongoose.Promise = Promise;
 
 module.exports = function(app) {
-	 app.post('/api/shifts', function(req, res) {
-	 	console.log(req.body);
+	 app.post('/api/shifts', function(req) {
+	 	console.log("REQ.BODY:" + req.body);
 	 	var shifts = new ShiftSwap ({
 	 		text: req.body.type,
 	 		date: req.body.date,
 	 		startTime: req.body.startTime,
 	 		endTime: req.body.endTime,
-	 		accepted: req.body.accepted
+	 		accepted: req.body.accepted,
+            postedBy: req.body.postedBy
 	 	})
 
-		shifts.save(function(err, doc){
+		shifts.save(function(err){
 			if(err) throw err
 		})
 	})

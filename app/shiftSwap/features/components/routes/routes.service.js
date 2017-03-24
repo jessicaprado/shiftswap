@@ -6,7 +6,7 @@ function RouteService($http) {
 
 	return {
 		createShift: function(routes) {
-			console.log(routes);
+
 			$http({
 				method: 'POST',
 				url: '/api/shifts',

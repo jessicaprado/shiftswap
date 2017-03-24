@@ -11,13 +11,8 @@ var Fb = new Schema({
         token: String,
         name: String
     },
-    posts: {
-        shiftGiveAways: [{
-            type:Schema.Types.ObjectId,
-            ref: 'ShiftSwap'
-        }]
-    }
 });
+
 // methods ======================
 // generating a hash
 Fb.methods.generateHash = function(password) {
