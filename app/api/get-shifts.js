@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var db = require('./../shiftSwap/services/connection.js');
 var ShiftSwap = require('./../shiftSwap/services/shift.model.js');
+var Fb = require('./../shiftSwap/services/user.model.js');
 
 // Require bluebird as promise 
 var Promise = require('bluebird');
@@ -10,7 +11,7 @@ module.exports = function(app) {
 	app.get('/api/shifts', function(req, res){
 	 	ShiftSwap.find({})
 
-	 	.populate('Fb')
+	 	.populate('postedBy')
 
 	 	.exec(function(err, doc){
 	 		

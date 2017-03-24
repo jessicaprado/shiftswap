@@ -27,6 +27,7 @@
     "localStorage": "^1.0.3",
     "mongodb": "*",
     "mongoose": "^4.9.0",
+    "mongoose-deep-populate": "^3.0.0",
     "passport": "*",
     "passport-facebook": "^2.0.0",
     "passport-http": "*",
