@@ -11,6 +11,10 @@ var Fb = new Schema({
         token: String,
         name: String
     },
+    acceptedShifts: [{
+        type: Schema.ObjectId,
+        ref: 'ShiftSwap'
+    }]
 });
 
 // methods ======================

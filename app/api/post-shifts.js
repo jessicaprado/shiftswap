@@ -8,7 +8,6 @@ mongoose.Promise = Promise;
 
 module.exports = function(app) {
 	 app.post('/api/shifts', function(req) {
-	 	console.log("REQ.BODY:" + req.body);
 	 	var shifts = new ShiftSwap ({
 	 		text: req.body.type,
 	 		date: req.body.date,

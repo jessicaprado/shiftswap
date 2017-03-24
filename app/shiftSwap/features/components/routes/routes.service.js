@@ -6,7 +6,6 @@ function RouteService($http) {
 
 	return {
 		createShift: function(routes) {
-
 			$http({
 				method: 'POST',
 				url: '/api/shifts',
@@ -26,17 +25,18 @@ function RouteService($http) {
 				routes.push(element);
 				});
 			})
-		}
+		},
 
-        /*acceptShift: function(routes) {
+        acceptedShift: function(routes) {
             $http({
-                method: 'GET',
-                url: '/api/myshifts',
+                method: 'POST',
+                url: '/api/shifts',
+                data: routes,
             }).then(function(response){
-                response.data.forEach(function(element){
-                    routes.push(element);
+            	console.log(response)
+                //response.data.forEach(function(element){
+                    //routes.push(element);
                 });
-            })
-        }*/
+            }
+        }
 	}
-}

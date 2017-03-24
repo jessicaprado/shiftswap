@@ -5,11 +5,12 @@
 
 <navbar></navbar>
 <h2>Open</h2>
-<div ng-repeat="shift in OpenVM.openShifts | orderBy: 'date' ">
+<div ng-repeat="shift in OpenVM.openShifts | orderBy: 'date' "
+	 ng-if="shift.accepted !== true">
 	<p>{{shift.date | date : "fullDate"}}<br>
 	{{shift.startTime | date : "h:mma"}} - {{shift.endTime | date : "h:mma"}}<br>
 	{{shift.text}}<br>
-		{{shift.postedBy}}<br>
+	 Posted By: {{shift.postedBy}}<br>
 	<button ng-click="OpenVM.acceptShift()">Accept Shift</button>
 	</p>
 </div>
