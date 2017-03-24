@@ -7,11 +7,13 @@ var Promise = require('bluebird');
 mongoose.Promise = Promise;
 
 module.exports = function(app) {
-    app.post('/api/shifts', function(req, res) {
-        ShiftSwap.findByIdAndUpdate(id, {$set: {accepted: 'true'}}, function (err, doc) {
-            if (err) throw err;
-            res.json(doc);
-        })
+    app.post('/api/accepted', function(req, res) {
+        console.log(req)
+        // ShiftSwap.findByIdAndUpdate(id, {$set: {accepted: 'true'}}, function (err, doc) {
+        //     if (err) throw err;
+        //     res.json(doc);
+        //     console.log(doc);
+        // })
     })
 
 

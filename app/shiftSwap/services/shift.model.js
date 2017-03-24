@@ -22,7 +22,11 @@ var ShiftSwap = new Schema ({
 	},
 	postedBy: {
 		type: String
-	}
+	},
+    author: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Fb'
+    }]
 })
 //ShiftSwap.plugin(deepPopulate);
 var ShiftSwap = mongoose.model('ShiftSwap', ShiftSwap);

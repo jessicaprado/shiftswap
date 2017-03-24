@@ -10,6 +10,7 @@
     <meta name="fragment" content="!">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="shiftSwap/layout/style.css">
     <!-- load fontawesome -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
@@ -29,12 +30,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
     <script src="//cdn.rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.min.js"></script>
     <link href="//cdn.rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Nobile:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
    
 </head>
 
 <body ng-app="shiftSwap">
-    <h1>Shift Swap</h1>
 
 	<ui-view></ui-view>
     
@@ -62,6 +63,9 @@
 
 <script src="shiftSwap/features/components/navbar/navbar.module.js"></script>
 <script src="shiftSwap/features/components/navbar/navbar.directive.js"></script>
+
+<script src="shiftSwap/features/components/logout/logout.module.js"></script>
+<script src="shiftSwap/features/components/logout/logout.directive.js"></script>
 
 <script src="shiftSwap/features/components/routes/routes.module.js"></script>
 <script src="shiftSwap/features/components/routes/routes.service.js"></script>
