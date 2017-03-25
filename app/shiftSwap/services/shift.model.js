@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-var deepPopulate = require('mongoose-deep-populate')(mongoose);
 mongoose.Promise = Promise;
 
 var Schema = mongoose.Schema;
@@ -18,7 +17,7 @@ var ShiftSwap = new Schema ({
 		type: String
 	},
 	accepted: {
-		type: Boolean 
+		type: Boolean
 	},
 	postedBy: {
 		type: String

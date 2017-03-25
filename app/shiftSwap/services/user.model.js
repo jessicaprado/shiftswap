@@ -6,13 +6,17 @@ var bcrypt   = require('bcrypt-nodejs');
 var Schema = mongoose.Schema;
 
 var Fb = new Schema({
-    facebook: {
-        id: String,
-        token: String,
-        name: String
+    facebook_id: {
+        type: String
+    },
+    token: {
+        type: String
+    },
+    name: {
+        type: String
     },
     acceptedShifts: [{
-        type: Schema.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'ShiftSwap'
     }]
 });
