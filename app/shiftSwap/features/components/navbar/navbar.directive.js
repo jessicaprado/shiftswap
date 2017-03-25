@@ -27,9 +27,6 @@ function NavbarCtrl() {
 		}, {
         title: 'My Shifts',
         link: 'myshifts'
-		},
-		{
-		title: 'Settings',
-		link: 'settings'
 		}]
 }
+
