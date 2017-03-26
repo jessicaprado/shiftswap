@@ -2,10 +2,10 @@ angular
 	.module('shiftSwap.postShifts')
 	.controller('PostCtrl', PostCtrl);
 
-function PostCtrl($scope, routes) {
+function PostCtrl(routes) {
 	var vm = this;
     vm.name = localStorage.getItem('name');
-
+    vm.userID = localStorage.getItem('id');
 
 	vm.shift = {
 			type: '',
@@ -13,7 +13,8 @@ function PostCtrl($scope, routes) {
 			startTime: '',
 			endTime: '',
 			accepted: false,
-			postedBy: vm.name
+			postedBy: vm.name,
+			userID: vm.userID
 		};
 
 	resetView();
@@ -25,14 +26,13 @@ function PostCtrl($scope, routes) {
 			startTime: '',
 			endTime: '',
 			accepted: false,
-            postedBy: vm.name
+            postedBy: vm.name,
+            userID: vm.userID
 		}
 	};
 
 	vm.addShift = function() {
-        console.log(vm.shift);
 		routes.createShift(vm.shift);
-
 		resetView();
 	}
 

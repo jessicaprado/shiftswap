@@ -11,7 +11,7 @@ function RouteService($http) {
                 url: '/api/shifts',
                 data: routes,
             }).then(function (response) {
-
+                console.log(response)
 
             })
         },

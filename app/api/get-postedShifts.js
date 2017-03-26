@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var Fb = require('./../shiftSwap/services/user.model.js');
 var db = require('./../shiftSwap/services/connection.js');
 var ShiftSwap = require('./../shiftSwap/services/shift.model.js');
 
@@ -7,13 +8,12 @@ var Promise = require('bluebird');
 mongoose.Promise = Promise;
 
 module.exports = function(app) {
-    app.post('/api/accepted', function(req, res) {
-        console.log(req)
-        // ShiftSwap.findByIdAndUpdate(id, {$set: {accepted: 'true'}}, function (err, doc) {
-        //     if (err) throw err;
-        //     res.json(doc);
-        //     console.log(doc);
-        // })
+    app.get('/api/posted', function(req, res) {
+        Fb.find({})
+            .populate('postedShifts')
+            .exec(function (err, result) {
+                res.send(result)
+            })
     })
 
 

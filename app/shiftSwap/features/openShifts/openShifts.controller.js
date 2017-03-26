@@ -11,8 +11,8 @@ function OpenCtrl($scope, routes, $http, $rootScope, $location) {
             //User is Authenticated
             if (user !== '0') {
                 $rootScope.currentUser = user;
-                localStorage.setItem('id', user.facebook.id);
-                localStorage.setItem('name', user.facebook.name);
+                localStorage.setItem('id', user.facebook_id);
+                localStorage.setItem('name', user.name);
             } else { //User is not Authenticated
                 $rootScope.errorMessage = 'You need to log in.';
 

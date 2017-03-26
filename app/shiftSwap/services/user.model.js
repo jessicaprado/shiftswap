@@ -7,14 +7,18 @@ var Schema = mongoose.Schema;
 
 var Fb = new Schema({
     facebook_id: {
-        type: String
+        type: Number
     },
     token: {
-        type: String
+        type: Number
     },
     name: {
         type: String
     },
+    postedShifts: [{
+        type: Schema.Types.ObjectId,
+        ref: 'ShiftSwap'
+    }],
     acceptedShifts: [{
         type: Schema.Types.ObjectId,
         ref: 'ShiftSwap'

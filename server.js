@@ -36,6 +36,7 @@ require('./app/shiftSwap/sessions/passport.routes.js')(app, passport); // load o
 //var getRoute = require("./api/get-items.js")(app);
 var postRoute = require("./app/api/post-shifts.js")(app);
 var getRoute = require("./app/api/get-shifts.js")(app);
+var getMyShifts = require("./app/api/get-postedShifts.js")(app);
 
 app.listen(PORT, function() {
 	console.log ("I am listening on PORT " + PORT);
