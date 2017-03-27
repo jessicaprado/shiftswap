@@ -29,10 +29,7 @@ module.exports = function(app) {
 					 	'postedShifts': doc._id}}, function (err, newdoc) {
 					 	if (err) {
                            	res.send(err);
-                       	} else {
-                            console.log(doc.userID);
-                       		console.log(newdoc);
-                     	}
+                       	}
 				 })
              }
          })

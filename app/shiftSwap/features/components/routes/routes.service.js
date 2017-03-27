@@ -33,8 +33,7 @@ function RouteService($http) {
                 url: '/api/accepted',
                 data: {'id': routes},
             }).then(function (response) {
-
-
+                console.log(response)
             })
         }
     }
