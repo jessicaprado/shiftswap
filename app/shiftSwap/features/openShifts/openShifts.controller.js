@@ -23,12 +23,11 @@ function OpenCtrl($scope, routes, $http, $rootScope, $location) {
 
 	//get call to display shifts
 	vm.openShifts = [];
-	routes.displayShift(vm.openShifts)
+	routes.displayShift(vm.openShifts);
 
 	//start of ng-click to accept shifts
-    vm.acceptedShifts = [];
-    vm.acceptShift = function() {
-        routes.acceptedShift()
+    vm.acceptShift = function(id) {
+        routes.acceptedShift(id);
     }
 
 }

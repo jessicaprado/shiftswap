@@ -11,5 +11,5 @@
 	<p class="time">Shift Time: {{shift.startTime | date : "h:mma"}} - {{shift.endTime | date : "h:mma"}}</p>
 	<p class="text">{{shift.text}}</p>
 	<p class="posted">Posted By: {{shift.postedBy}}</p>
-	<button class="acceptButton" ng-click="OpenVM.acceptShift()">Accept Shift</button>
+	<button data-id="{{shift._id}}" class="acceptButton" ng-click="OpenVM.acceptShift(shift._id)">Accept Shift</button>
 </div>

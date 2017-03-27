@@ -31,10 +31,10 @@ function RouteService($http) {
             $http({
                 method: 'POST',
                 url: '/api/accepted',
-                data: routes,
+                data: {'id': routes},
             }).then(function (response) {
-                console.log(response);
-                
+
+
             })
         }
     }
