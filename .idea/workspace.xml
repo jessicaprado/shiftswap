@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57ba5207-7139-4b65-9875-e0e293709dbd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/features/components/routes/routes.service.js" afterPath="$PROJECT_DIR$/app/shiftSwap/features/components/routes/routes.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.controller.js" afterPath="$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.html" afterPath="$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,11 +64,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.service.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="routes.service.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/components/routes/routes.service.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="45" column="56" lean-forward="false" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+                <state relative-caret-position="630">
+                  <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -87,7 +84,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="myshifts.controller.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="myshifts.controller.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.controller.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="150">
@@ -775,12 +772,12 @@
       <workItem from="1490045654609" duration="701000" />
       <workItem from="1490097445663" duration="4403000" />
       <workItem from="1490141840110" duration="52330000" />
-      <workItem from="1490569896807" duration="7305000" />
+      <workItem from="1490569896807" duration="8090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64739000" />
+    <option name="totallyTimeSpent" value="65524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1164,14 +1161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/post-acceptShift.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1196,6 +1185,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/components/routes/routes.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/post-acceptShift.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1208,22 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/components/routes/routes.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="45" column="56" lean-forward="false" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
           <folding />
         </state>
       </provider>

@@ -41,7 +41,6 @@ function RouteService($http) {
                 method: 'GET',
                 url: '/api/accepted',
             }).then(function (response) {
-
                 response.data.forEach(function (element) {
                     routes.push(element.acceptedShifts);
                 });
