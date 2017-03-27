@@ -35,6 +35,17 @@ function RouteService($http) {
             }).then(function (response) {
                 console.log(response)
             })
+        },
+        myAcceptedShift: function (routes) {
+            $http({
+                method: 'GET',
+                url: '/api/accepted',
+            }).then(function (response) {
+
+                response.data.forEach(function (element) {
+                    routes.push(element.acceptedShifts);
+                });
+            })
         }
     }
 }

@@ -2,3 +2,11 @@
 <navbar></navbar>
 
 My Shifts
+<div class="myAcceptedShifts"
+     ng-repeat = "accepted in MyShiftsVM.myShifts[0] | orderBy: 'date' ">
+    <p class="date">{{accepted.date | date : "fullDate"}}</p>
+    <p class="time">Shift Time: {{accepted.startTime | date : "h:mma"}} - {{accepted.endTime | date : "h:mma"}}</p>
+    <p class="text">{{accepted.text}}</p>
+    <p class="posted">Posted By: {{accepted.postedBy}}</p>
+
+</div>
