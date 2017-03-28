@@ -33,3 +33,14 @@ function OpenCtrl($scope, routes, $http, $rootScope, $location) {
     }
 
 }
+
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        defaultView: 'agendaWeek',
+        height: 'auto'
+    });
+
+});

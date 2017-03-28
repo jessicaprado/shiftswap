@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57ba5207-7139-4b65-9875-e0e293709dbd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-animate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-aria.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-aria.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-material.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-material.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-moment-picker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-moment-picker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-moment-picker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular-moment-picker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/fullcalendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/fullcalendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/fullcalendar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/fullcalendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/moment-with-locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/moment-with-locales.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shiftSwap/public/lib/moment.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.controller.js" afterPath="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html" afterPath="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +32,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6343242">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="openShifts.controller.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="openShifts.controller.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+                <state relative-caret-position="487">
+                  <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -73,11 +52,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+                <state relative-caret-position="495">
+                  <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -87,21 +66,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="openShifts.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="openShifts.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="myshifts.controller.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.controller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -159,9 +128,7 @@
         <option value="$PROJECT_DIR$/app/api/post-myshifts.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/config/passport.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/services/user.model.js" />
-        <option value="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html" />
         <option value="$PROJECT_DIR$/app/api/post-shifts.js" />
-        <option value="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.controller.js" />
         <option value="$PROJECT_DIR$/app/api/post-acceptShift.js" />
         <option value="$PROJECT_DIR$/app/api/get-acceptedShifts.js" />
         <option value="$PROJECT_DIR$/app/api/get-acceptedShift.js" />
@@ -170,6 +137,8 @@
         <option value="$PROJECT_DIR$/app/shiftSwap/features/components/routes/routes.service.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html" />
+        <option value="$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.controller.js" />
       </list>
     </option>
   </component>
@@ -268,7 +237,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,11 +259,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="openShifts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -720,12 +689,12 @@
       <workItem from="1490045654609" duration="701000" />
       <workItem from="1490097445663" duration="4403000" />
       <workItem from="1490141840110" duration="52330000" />
-      <workItem from="1490569896807" duration="11440000" />
+      <workItem from="1490569896807" duration="12333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68874000" />
+    <option name="totallyTimeSpent" value="69767000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1050,14 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1081,22 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1189,10 +1134,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        <state relative-caret-position="495">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/openShifts/openShifts.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="21" />
           <folding />
         </state>
       </provider>
