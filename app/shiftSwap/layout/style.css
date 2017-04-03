@@ -1,16 +1,25 @@
 body {
     background-color: white;
+    height: auto;
+}
+
+.banner {
+    height: 100%;
+    background-color: #010D14;
+    padding: 5%;
 }
 
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 70px;
-    margin-top: 30px;
     text-align: center;
+    color: #F9FBFF;
 }
 
 .loginOrRegister {
+    margin-top: 40px;
     text-align: center;
+    color: #F9FBFF;
 }
 
 .fbLogo {
@@ -26,12 +35,16 @@ h1 {
 .navbar {
     display: flex;
     justify-content: center;
+    border-radius: 0px;
+    height: 10%;
+    padding: 2%;
+    background-color: #010D14 ;
 }
 
 .navbar button {
     width:20%;
     margin-right: 1%;
-    background-color: #b9f5d9 ;
+    background-color: #010D14 ;
     border: none;
     color: white;
     text-align: center;

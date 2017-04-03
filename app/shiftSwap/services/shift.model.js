@@ -4,17 +4,17 @@ mongoose.Promise = Promise;
 var Schema = mongoose.Schema;
 
 var ShiftSwap = new Schema ({
-	text: {
+    title: {
 		type: String
 	},
 	date: {
 		type: Date
 	},
-	startTime: {
-		type: String
+    start: {
+		type: Date
 	},
-	endTime: {
-		type: String
+    end: {
+		type: Date
 	},
 	accepted: {
 		type: Boolean
