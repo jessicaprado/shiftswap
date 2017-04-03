@@ -11,10 +11,10 @@ var ShiftSwap = new Schema ({
 		type: Date
 	},
     start: {
-		type: Date
+		type: String
 	},
     end: {
-		type: Date
+		type: String
 	},
 	accepted: {
 		type: Boolean

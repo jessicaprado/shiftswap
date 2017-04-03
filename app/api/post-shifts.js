@@ -8,16 +8,17 @@ mongoose.Promise = Promise;
 
 module.exports = function(app) {
 	 app.post('/api/shifts', function(req) {
+
          var shifts = new ShiftSwap({
-             text: req.body.type,
+             title: req.body.title,
              date: req.body.date,
-             startTime: req.body.startTime,
-             endTime: req.body.endTime,
+             start: req.body.start,
+             end: req.body.end,
              accepted: req.body.accepted,
              postedBy: req.body.postedBy,
              userID: req.body.userID
          });
-
+         console.log(shifts);
          shifts.save(function (err, doc) {
              var facebookId = doc.userID;
              if (err) {

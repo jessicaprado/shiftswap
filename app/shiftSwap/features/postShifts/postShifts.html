@@ -4,29 +4,29 @@
 
 	<form>
 	  	Shift Type:<br>
-	  	<input type="text" ng-model="PostVM.shift.type" name="type"><br>
+	  	<input type="text" ng-model="PostVM.shift.title" name="type"><br>
 	  	Shift Date<br>
 	  	<input type="date"  ng-model="PostVM.shift.date" name="date">
 	 	<br>
 	  	Shift Start Time<br>
 	  	<div class="input-group"
-			moment-picker="PostVM.shift.startTime"
+			moment-picker="PostVM.shift.start"
 			format="LT">
 			
 			<input class="form-control"
 			    placeholder="Select a time"
-			    ng-model="PostVM.shift.startTime"
+			    ng-model="PostVM.shift.start"
 			    ng-model-options="{ updateOn: 'blur' }">
 		</div>
 	  	<br>
 	  	Shift End Time<br>
 	  	<div class="input-group"
-			moment-picker="PostVM.shift.endTime"
+			moment-picker="PostVM.shift.end"
 			format="LT">
 		
 			<input class="form-control"
 			    placeholder="Select a time"
-			    ng-model="PostVM.shift.endTime"
+			    ng-model="PostVM.shift.end"
 			    ng-model-options="{ updateOn: 'blur' }">
 		</div><br>
 

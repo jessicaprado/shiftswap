@@ -34,38 +34,34 @@ function PostCtrl(routes) {
 
 	vm.addShift = function() {
 		var dateDate = vm.shift.date; // Mon Apr 03 2017 00:00:00 GMT-0400 (EDT)
-        dateDate = dateDate.toISOString().toString();
-        dateDate = dateDate.slice(0, -13);
+        dateDate = dateDate.toISOString();
+        dateDate = dateDate.slice(0, -14);
 
 		var start = vm.shift.start;
         start = start.slice(0, -3);
 
         if (start.length < 5) {
         	start = "0" + start;
-        	console.log(start);
 		} else {
         	start = start;
-            console.log(start);
 		};
-		start = dateDate + start + ".00.000Z";
-		start.toISOString;
+		start = dateDate + " " + start + ".00.000Z";
+        Date.parse(start);
+        vm.shift.start = start;
 
 		var end = vm.shift.end;
         end = end.slice(0, -3);
 
         if (end.length < 5) {
             end = "0" + end;
-            console.log(end);
         } else {
             end = end;
-            console.log(end);
         };
-        end = dateDate + end + ".00.000Z";
-        end.toISOString;
-
+        end = dateDate + " " + end + ".00.000Z";
+        Date.parse(end);
+        vm.shift.end = end;
 
 		routes.createShift(vm.shift);
-		console.log(vm.shift)
 		resetView();
 	}
 
