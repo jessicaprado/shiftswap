@@ -40,9 +40,9 @@ $(document).ready(function() {
     $('#calendar').fullCalendar({
         defaultView: 'month',
         height: 'auto',
-        events: [{
+        events: {
             url: '/api/shifts'
-        }]
+        }
     });
 
 });
