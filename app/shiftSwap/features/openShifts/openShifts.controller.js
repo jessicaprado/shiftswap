@@ -35,14 +35,31 @@ function OpenCtrl($scope, routes, $http, $rootScope, $location) {
 }
 
 $(document).ready(function() {
-    // page is now ready, initialize the calendar...
-
     $('#calendar').fullCalendar({
-        defaultView: 'month',
-        height: 'auto',
-        events: {
-            url: '/api/shifts'
+
+        events: function (start, end, timezone, callback ) {
+            $.ajax({
+                url: '/api/shifts',
+                dataType: 'json',
+                success: function(doc) {
+                    var events = [];
+                    $(doc).each(function() {
+                        events.push({
+                            id: $(this).attr('_id'),
+                            title: $(this).attr('title'),
+                            start: $(this).attr('start'),
+                            end: $(this).attr('end'),
+                        });
+                    });
+                callback(events);
+                }
+            });
+        },
+        eventClick: function(calEvent, jsEvent, view) {
+            console.log(calEvent);
+            dataID = $(".shiftData").data('id');
+            $('#acceptModal').modal("toggle");
+
         }
     });
-
 });

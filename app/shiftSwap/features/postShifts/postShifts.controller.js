@@ -45,7 +45,7 @@ function PostCtrl(routes) {
 		} else {
         	start = start;
 		};
-		start = dateDate + " " + start + ".00.000Z";
+		start = dateDate + "T" + start + ":00.000Z";
         Date.parse(start);
         vm.shift.start = start;
 
@@ -57,7 +57,7 @@ function PostCtrl(routes) {
         } else {
             end = end;
         };
-        end = dateDate + " " + end + ".00.000Z";
+        end = dateDate + "T" + end + ":00.000Z";
         Date.parse(end);
         vm.shift.end = end;
 

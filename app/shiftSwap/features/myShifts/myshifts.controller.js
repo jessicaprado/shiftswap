@@ -9,3 +9,26 @@ function MyShiftsCtrl(routes) {
     routes.myAcceptedShift(vm.myShifts);
     console.log(vm.myShifts);
 }
+
+$(document).ready(function() {
+    // page is now ready, initialize the calendar...
+    $('#calendar').fullCalendar({
+        defaultView: 'agendaWeek',
+        events: function (start, end, timezone, callback ) {
+            $.ajax({
+                url: '/api/accepted',
+                dataType: 'json',
+                success: function(doc) {
+                    var events = [];
+                    $(doc).each(function() {
+                        events.push({
+                            title: $(this).attr('title'),
+                            start: $(this).attr('start') // will be parsed
+                        });
+                    });
+                    callback(events);
+                }
+            });
+        }
+    });
+});
