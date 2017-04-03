@@ -7,6 +7,7 @@ function PostCtrl(routes) {
     vm.name = localStorage.getItem('name');
     vm.userID = localStorage.getItem('id');
 
+
 	vm.shift = {
 			type: '',
 			date: '',
@@ -32,7 +33,13 @@ function PostCtrl(routes) {
 	};
 
 	vm.addShift = function() {
+		var start = vm.shift.startTime;
+        start = start.slice(0, -2);
+		//start = start.toIsoString();
+        console.log(start);
+
 		routes.createShift(vm.shift);
+
 		resetView();
 	}
 
