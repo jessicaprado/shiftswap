@@ -2,7 +2,7 @@ angular
 	.module('shiftSwap.openShifts')
 	.controller('OpenCtrl', OpenCtrl);
 
-function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig, ModalService) {
+function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
 	var vm = this;
 
     //at log in, site will grab fb id and save to local storage
@@ -26,6 +26,23 @@ function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig, ModalServ
 	vm.openShifts = [];
 	routes.displayShift(vm.openShifts);
 
+
+    /* alert on eventClick */
+    $scope.alertOnEventClick = function(calEvent, date, jsEvent, view){
+        console.log(calEvent);
+        specifiedEvent = {
+            id: calEvent._id,
+            title: calEvent.title,
+            date: calEvent.date,
+            start: calEvent._start._i,
+            end: calEvent._end._i,
+            postedBy: calEvent.postedBy,
+            accepted: calEvent.accepted
+        };
+        $scope.alertMessage = specifiedEvent;
+
+    };
+
 	//configCalendar
     vm.uiConfig = {
         calendar : {
@@ -36,50 +53,20 @@ function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig, ModalServ
                 left: 'title',
                 right: 'today prev,next'
             },
-            eventClick:
-                function toggleModal(calEvent, jsEvent, view) {
-                specifiedEvent = {
-                    id: calEvent._id,
-                    title: calEvent.title,
-                    date: calEvent.date,
-                    start: calEvent._start._i,
-                    end: calEvent._end._i,
-                    postedBy: calEvent.postedBy,
-                };
-                console.log(specifiedEvent);
-                vm.modalShown = !vm.modalShown;
-            }
+            eventClick: $scope.alertOnEventClick,
         }
     }
 
-
-    $scope.show = function() {
-        ModalService.showModal({
-            templateUrl: 'modal.html',
-            controller: "ModalController"
-        }).then(function(modal) {
-            modal.element.modal();
-            modal.close.then(function(result) {
-                $scope.message = "You said " + result;
-            });
-        });
-    };
-
-
-
-app.controller('ModalController', function($scope, close) {
-
-    $scope.close = function(result) {
-        close(result, 500); // close, but give 500ms for bootstrap to animate
-    };
-
-});
-
     //takes full array of open shifts and displays them on calendar
     vm.eventSources = [vm.openShifts];
+
 
 	//start of ng-click to accept shifts
     vm.acceptShift = function(id, userID) {
         routes.acceptedShift(id, userID);
     }
+
+
+
+
 }

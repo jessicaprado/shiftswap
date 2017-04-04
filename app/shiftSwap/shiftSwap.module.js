@@ -7,6 +7,7 @@ angular
 		'moment-picker',
         'ngRoute',
         'ui.calendar',
+        'ui.bootstrap',
 
 		//features
 		'shiftSwap.openShifts',

@@ -2,47 +2,22 @@
 
 <h2>Open Shifts</h2>
 
-<div ui-calendar="OpenVM.uiConfig.calendar" ng-model="OpenVM.eventSources"></div>
+<div class="alert-success calAlert"
+	 ng-show="alertMessage.accepted !== true && alertMessage != undefined && alertMessage != ''"
+	>
 
-<div class="modal fade">
-	<h3>Angular Modal Service</h3>
-	<a class="btn btn-default" href ng-click="show()">Show a Modal</a>
-	<p>{{message}}</p>
+	<p class="date">{{alertMessage.date | date : "fullDate"}}</p>
+	<p class="time">Shift Time: {{alertMessage.start | date : "h:mma"}} - {{alertMessage.end | date : "h:mma"}}</p>
+	<p class="text">{{alertMessage.title}}</p>
+	<p class="posted">Posted By: {{alertMessage.postedBy}}</p>
+	<button data-id="{{alertMessage.id}}" class="acceptButton" ng-click="OpenVM.acceptShift(alertMessage.id)">Accept Shift</button>
+	</div>
 
-	<!-- The actual modal template, just a bit o bootstrap -->
-	<script type="text/ng-template" id="modal.html">
-		<div class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Yes or No?</h4>
-					</div>
-					<div class="modal-body">
-						<p>It's your call...</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>
-						<button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</script>
+<div ui-calendar="OpenVM.uiConfig.calendar"
+	 ng-model="OpenVM.eventSources"
+	 ng-show="OpenVM.eventSources[0].accepted !== true"
+	 >
 
-</div>
-</div>
-
-
-
-<div class="shiftData"
-	 ng-repeat="shift in OpenVM.openShifts | orderBy: 'date' "
-	 ng-if="shift.accepted !== true">
-	<p class="date">{{shift.date | date : "fullDate"}}</p>
-	<p class="time">Shift Time: {{shift.start | date : "h:mma"}} - {{shift.end | date : "h:mma"}}</p>
-	<p class="text">{{shift.title}}</p>
-	<p class="posted">Posted By: {{shift.postedBy}}</p>
-	<button data-id="{{shift._id}}" class="acceptButton" ng-click="OpenVM.acceptShift(shift._id)">Accept Shift</button>
-</div>
+	</div>
 
 <logout></logout>
