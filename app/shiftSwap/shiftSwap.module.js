@@ -8,7 +8,6 @@ angular
         'ngRoute',
         'ui.calendar',
 
-
 		//features
 		'shiftSwap.openShifts',
 		'shiftSwap.postShifts',

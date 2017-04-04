@@ -2,7 +2,7 @@ angular
 	.module('shiftSwap.openShifts')
 	.controller('OpenCtrl', OpenCtrl);
 
-function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
+function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig, ModalService) {
 	var vm = this;
 
     //at log in, site will grab fb id and save to local storage
@@ -36,11 +36,44 @@ function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
                 left: 'title',
                 right: 'today prev,next'
             },
-            // eventClick: alertEventOnClick,
-            // eventDrop: $scope.alertOnDrop,
-            // eventResize: $scope.alertOnResize
+            eventClick:
+                function toggleModal(calEvent, jsEvent, view) {
+                specifiedEvent = {
+                    id: calEvent._id,
+                    title: calEvent.title,
+                    date: calEvent.date,
+                    start: calEvent._start._i,
+                    end: calEvent._end._i,
+                    postedBy: calEvent.postedBy,
+                };
+                console.log(specifiedEvent);
+                vm.modalShown = !vm.modalShown;
+            }
         }
     }
+
+
+    $scope.show = function() {
+        ModalService.showModal({
+            templateUrl: 'modal.html',
+            controller: "ModalController"
+        }).then(function(modal) {
+            modal.element.modal();
+            modal.close.then(function(result) {
+                $scope.message = "You said " + result;
+            });
+        });
+    };
+
+
+
+app.controller('ModalController', function($scope, close) {
+
+    $scope.close = function(result) {
+        close(result, 500); // close, but give 500ms for bootstrap to animate
+    };
+
+});
 
     //takes full array of open shifts and displays them on calendar
     vm.eventSources = [vm.openShifts];
