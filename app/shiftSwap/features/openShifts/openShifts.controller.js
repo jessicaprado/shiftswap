@@ -2,7 +2,7 @@ angular
 	.module('shiftSwap.openShifts')
 	.controller('OpenCtrl', OpenCtrl);
 
-function OpenCtrl($scope, routes, $http, $rootScope, $location) {
+function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
 	var vm = this;
 
     //at log in, site will grab fb id and save to local storage
@@ -18,48 +18,35 @@ function OpenCtrl($scope, routes, $http, $rootScope, $location) {
 
         }
     });
-
+    //gets localStorage
     vm.name = localStorage.getItem('name');
     vm.userID = localStorage.getItem('id');
-
 
     //get call to display shifts
 	vm.openShifts = [];
 	routes.displayShift(vm.openShifts);
 
+	//configCalendar
+    vm.uiConfig = {
+        calendar : {
+            height: 500,
+            editable: true,
+            displayEventTime: true,
+            header:{
+                left: 'title',
+                right: 'today prev,next'
+            },
+            // eventClick: alertEventOnClick,
+            // eventDrop: $scope.alertOnDrop,
+            // eventResize: $scope.alertOnResize
+        }
+    }
+
+    //takes full array of open shifts and displays them on calendar
+    vm.eventSources = [vm.openShifts];
+
 	//start of ng-click to accept shifts
     vm.acceptShift = function(id, userID) {
         routes.acceptedShift(id, userID);
     }
-
 }
-
-$(document).ready(function() {
-    $('#calendar').fullCalendar({
-
-        events: function (start, end, timezone, callback ) {
-            $.ajax({
-                url: '/api/shifts',
-                dataType: 'json',
-                success: function(doc) {
-                    var events = [];
-                    $(doc).each(function() {
-                        events.push({
-                            id: $(this).attr('_id'),
-                            title: $(this).attr('title'),
-                            start: $(this).attr('start'),
-                            end: $(this).attr('end'),
-                        });
-                    });
-                callback(events);
-                }
-            });
-        },
-        eventClick: function(calEvent, jsEvent, view) {
-            console.log(calEvent);
-            dataID = $(".shiftData").data('id');
-            $('#acceptModal').modal("toggle");
-
-        }
-    });
-});

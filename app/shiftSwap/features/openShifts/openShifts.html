@@ -2,32 +2,16 @@
 
 <h2>Open Shifts</h2>
 
-<div id='calendar'></div>
+<div ui-calendar="OpenVM.uiConfig.calendar" ng-model="OpenVM.eventSources"></div>
+
+<button ng-click='toggleModal()'>Open Modal Dialog</button>
+<modal-dialog show='modalShown' width='750px' height='60%'>
+	<p>Modal Content Goes here<p>
+</modal-dialog>
 
 
-<!-- Trigger the modal with a button -->
 
-
-<!-- Modal -->
-<div id="acceptModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
-		<div class="shiftData modal-content"
-			 ng-repeat="shift in OpenVM.openShifts | orderBy: 'date' "
-			 ng-if="shift.accepted !== true"
-			 data-id="{{shift._id}}">
-			<p class="date">{{shift.date | date : "fullDate"}}</p>
-			<p class="time">Shift Time: {{shift.start | date : "h:mma"}} - {{shift.end | date : "h:mma"}}</p>
-			<p class="text">{{shift.title}}</p>
-			<p class="posted">Posted By: {{shift.postedBy}}</p>
-			<button data-id="{{shift._id}}" class="acceptButton" ng-click="OpenVM.acceptShift(shift._id)">Accept Shift</button>
-		</div>
-
-	</div>
-</div>
-
-<div class="shiftData modal-content"
+<div class="shiftData"
 	 ng-repeat="shift in OpenVM.openShifts | orderBy: 'date' "
 	 ng-if="shift.accepted !== true">
 	<p class="date">{{shift.date | date : "fullDate"}}</p>

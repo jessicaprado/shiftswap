@@ -15,14 +15,13 @@
     <!-- load fontawesome -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <!-- jQuery -->
+    <script src="shiftSwap/public/lib/jquery.min.js" type="text/javascript"></script>
 
     <!-- Angular Material Dependencies -->
     <script src="shiftSwap/public/lib/angular.min.js"></script>
     <script src="shiftSwap/public/lib/angular-animate.min.js"></script>
     <script src="shiftSwap/public/lib/angular-aria.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="shiftSwap/public/lib/jquery.min.js" type="text/javascript"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -33,6 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 
     <!-- Moment Picker -->
+    <script src='shiftSwap/public/lib/moment.min.js'></script>
     <script src="shiftSwap/public/lib/moment-with-locales.js"></script>
     <script src="shiftSwap/public/lib/angular-moment-picker.min.js"></script>
     <link href="shiftSwap/public/lib/angular-moment-picker.min.css" rel="stylesheet">
@@ -44,8 +44,12 @@
 
     <!-- Full Calendar Plugin -->
     <link rel='stylesheet' href='shiftSwap/public/lib/fullcalendar.css' />
-    <script src='shiftSwap/public/lib/moment.min.js'></script>
     <script src='shiftSwap/public/lib/fullcalendar.js'></script>
+
+
+    <!-- calendar ui -->
+    <script type="text/javascript" src="shiftSwap/public/lib/calendar.js"></script>
+    <script type="text/javascript" src="shiftSwap/public/lib/gcal.js"></script>
    
 </head>
 
@@ -80,6 +84,9 @@
 
 <script src="shiftSwap/features/components/logout/logout.module.js"></script>
 <script src="shiftSwap/features/components/logout/logout.directive.js"></script>
+
+<script src="shiftSwap/features/components/modal/modal.module.js"></script>
+<script src="shiftSwap/features/components/modal/modal.directive.js"></script>
 
 <script src="shiftSwap/features/components/routes/routes.module.js"></script>
 <script src="shiftSwap/features/components/routes/routes.service.js"></script>

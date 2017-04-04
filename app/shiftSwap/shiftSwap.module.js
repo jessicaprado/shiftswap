@@ -6,9 +6,10 @@ angular
 		//time picker
 		'moment-picker',
         'ngRoute',
+        'ui.calendar',
 
 
-		//feeatures
+		//features
 		'shiftSwap.openShifts',
 		'shiftSwap.postShifts',
 		'shiftSwap.settings',
