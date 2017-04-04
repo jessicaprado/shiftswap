@@ -3,4 +3,4 @@ angular.module('shiftSwap.openShifts', [
     'shiftSwap.component.logout',
     'ui.calendar',
     'ui.bootstrap',
-	]);
+	])

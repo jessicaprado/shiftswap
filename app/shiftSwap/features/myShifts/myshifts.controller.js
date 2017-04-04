@@ -2,33 +2,29 @@ angular
     .module('shiftSwap.myShifts')
     .controller('MyShiftsCtrl', MyShiftsCtrl);
 
-function MyShiftsCtrl(routes) {
+function MyShiftsCtrl(routes, $scope) {
     var vm = this;
 
     vm.myShifts = [];
     routes.myAcceptedShift(vm.myShifts);
-    console.log(vm.myShifts);
-}
 
-$(document).ready(function() {
-    // page is now ready, initialize the calendar...
-    $('#calendar').fullCalendar({
-        defaultView: 'agendaWeek',
-        events: function (start, end, timezone, callback ) {
-            $.ajax({
-                url: '/api/accepted',
-                dataType: 'json',
-                success: function(doc) {
-                    var events = [];
-                    $(doc).each(function() {
-                        events.push({
-                            title: $(this).attr('title'),
-                            start: $(this).attr('start') // will be parsed
-                        });
-                    });
-                    callback(events);
-                }
-            });
+    //configCalendar
+    vm.uiConfig = {
+        calendar : {
+            defaultView: 'agendaWeek',
+            height: 500,
+            editable: true,
+            displayEventTime: true,
+            header:{
+                center: 'title',
+                right: 'today prev,next'
+            },
+            //eventClick: $scope.alertOnEventClick,
         }
-    });
-});
+    }
+
+    //takes full array of open shifts and displays them on calendar
+
+    vm.eventSources = vm.myShifts;
+
+}

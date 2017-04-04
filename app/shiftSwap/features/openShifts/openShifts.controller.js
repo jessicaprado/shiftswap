@@ -29,7 +29,6 @@ function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
 
     /* alert on eventClick */
     $scope.alertOnEventClick = function(calEvent, date, jsEvent, view){
-        console.log(calEvent);
         specifiedEvent = {
             id: calEvent._id,
             title: calEvent.title,
@@ -62,8 +61,9 @@ function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
 
 
 	//start of ng-click to accept shifts
-    vm.acceptShift = function(id, userID) {
+    vm.acceptShift = function(id, userID, $scope) {
         routes.acceptedShift(id, userID);
+        $scope.alertMessage = "You have picked up this shift!"
     }
 
 
