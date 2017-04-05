@@ -6,14 +6,14 @@ module.exports = function(app, passport) {
 
     // Facebook auth routes
     app.get('/auth/facebook', function authenticateFacebook (req, res, next) {
-            req.session.returnTo = '/openshifts';
+            req.session.returnTo = '/#/openShifts';
             next ();
         },
         passport.authenticate ('facebook'));
 
     app.get('/auth/facebook/callback', function (req, res, next) {
         var authenticator = passport.authenticate ('facebook', {
-            successRedirect : '/openshifts',
+            successRedirect : '/#/openShifts',
             failureRedirect : '/'
         });
 
