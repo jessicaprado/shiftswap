@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57ba5207-7139-4b65-9875-e0e293709dbd" name="Default" comment="" />
+    <list default="true" id="57ba5207-7139-4b65-9875-e0e293709dbd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/config/oauth.js" afterPath="$PROJECT_DIR$/app/shiftSwap/config/oauth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shiftSwap/services/connection.js" afterPath="$PROJECT_DIR$/app/shiftSwap/services/connection.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +42,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="passport.routes.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="passport.routes.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="51" />
+                <state relative-caret-position="630">
+                  <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="oauth.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/shiftSwap/config/oauth.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -72,7 +86,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="login.routes.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="login.routes.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/login/login.routes.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
@@ -92,11 +106,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="connection.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="connection.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/services/connection.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -171,8 +185,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/procfile" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/shiftSwap/config/oauth.js" />
-        <option value="$PROJECT_DIR$/app/shiftSwap/services/connection.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/features/postShifts/postShifts.routes.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/features/components/navbar/navbar.directive.js" />
         <option value="$PROJECT_DIR$/app/shiftSwap/features/myShifts/myshifts.routes.js" />
@@ -181,6 +193,8 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/shiftSwap/features/login/login.html" />
         <option value="$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js" />
+        <option value="$PROJECT_DIR$/app/shiftSwap/config/oauth.js" />
+        <option value="$PROJECT_DIR$/app/shiftSwap/services/connection.js" />
       </list>
     </option>
   </component>
@@ -752,12 +766,12 @@
       <workItem from="1490141840110" duration="52330000" />
       <workItem from="1490569896807" duration="56937000" />
       <workItem from="1491316482988" duration="197000" />
-      <workItem from="1491338397822" duration="8161000" />
+      <workItem from="1491338397822" duration="8882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122729000" />
+    <option name="totallyTimeSpent" value="123450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -969,26 +983,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/services/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/login/login.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/config/oauth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1121,14 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/login/login.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/postShifts/postShifts.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -1179,8 +1169,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="630">
+          <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/config/oauth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/features/login/login.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shiftSwap/services/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding />
         </state>
       </provider>
