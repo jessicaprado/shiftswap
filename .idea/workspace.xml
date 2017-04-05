@@ -83,8 +83,8 @@
           <file leaf-file-name="passport.routes.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+                <state relative-caret-position="90">
+                  <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -840,12 +840,12 @@
       <workItem from="1490141840110" duration="52330000" />
       <workItem from="1490569896807" duration="56937000" />
       <workItem from="1491316482988" duration="197000" />
-      <workItem from="1491338397822" duration="4642000" />
+      <workItem from="1491338397822" duration="4737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119210000" />
+    <option name="totallyTimeSpent" value="119305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1246,8 +1246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/shiftSwap/sessions/passport.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="90">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
         </state>
       </provider>
