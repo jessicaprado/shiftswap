@@ -6,6 +6,8 @@ module.exports = function(app, passport) {
 
     // Facebook auth routes
     app.get('/auth/facebook', function authenticateFacebook (req, res, next) {
+                console.log(req.session);
+                console.log(req.query);
             req.session.returnTo = '/#' + req.query.returnTo;
             next ();
         },
