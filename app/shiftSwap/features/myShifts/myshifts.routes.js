@@ -4,8 +4,8 @@ angular
 
 function myShiftsConfig($stateProvider) {
     $stateProvider.state({
-        name: 'myshifts',
-        url: '/myshifts',
+        name: 'myShifts',
+        url: '/myShifts',
         templateUrl: '/shiftSwap/features/myShifts/myShifts.html',
         controller: 'MyShiftsCtrl',
         controllerAs: 'MyShiftsVM'

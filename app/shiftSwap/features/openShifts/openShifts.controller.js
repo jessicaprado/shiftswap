@@ -6,7 +6,7 @@ function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
 	var vm = this;
 
     //at log in, site will grab fb id and save to local storage
-    $http.get('/loggedin').success(function(user) {
+    $http.get('/loggedIn').success(function(user) {
         $rootScope.errorMessage = null;
         //User is Authenticated
         if (user !== '0') {

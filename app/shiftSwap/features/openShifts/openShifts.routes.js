@@ -4,15 +4,15 @@ angular
 
 function openConfig($stateProvider, $routeProvider) {
 	$stateProvider.state({
-		name: 'openshifts',
-		url: '/openshifts',
+		name: 'openShifts',
+		url: '/openShifts',
 		templateUrl: '/shiftSwap/features/openShifts/openShifts.html',
 		controller: 'OpenCtrl',
 		controllerAs: 'OpenVM'
 	});
 
     $routeProvider
-        .when('/openshifts', {
+        .when('/openShifts', {
             resolve: {
                 logincheck: checkLoggedin
             }
@@ -21,7 +21,7 @@ function openConfig($stateProvider, $routeProvider) {
 var checkLoggedin = function($q, $timeout, $http, $location, $rootScope) {
     var deferred = $q.defer();
 
-    $http.get('/loggedin').success(function(user) {
+    $http.get('/loggedIn').success(function(user) {
 
         $rootScope.errorMessage = null;
         //User is Authenticated
