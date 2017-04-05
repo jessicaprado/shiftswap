@@ -19,7 +19,7 @@ module.exports = function(app, passport) {
 
         delete req.session.returnTo;
         authenticator (req, res, next);
-    })
+    });
     // Facebook auth routes
     // app.get('/auth/facebook', function authenticateFacebook (req, res, next) {
     //         req.session.returnTo = '/#' + req.query.returnTo;
@@ -37,5 +37,5 @@ module.exports = function(app, passport) {
     app.post("/logout", function(req, res) {
         req.logOut();
         res.send(200);
-    })
+    });
 };
