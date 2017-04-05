@@ -6,7 +6,7 @@ module.exports = function(app, passport) {
 
     // Facebook auth routes
     app.get('/auth/facebook', function authenticateFacebook (req, res, next) {
-            req.session.returnTo = '/#/openShifts';
+            req.session.returnTo = '/#' + req.query.returnTo;
             next ();
         },
         passport.authenticate ('facebook'));
