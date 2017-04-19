@@ -29,6 +29,7 @@ function OpenCtrl($scope, routes, $http, $rootScope, uiCalendarConfig) {
 
     /* alert on eventClick */
     $scope.alertOnEventClick = function(calEvent, date, jsEvent, view){
+        console.log(calEvent);
         specifiedEvent = {
             id: calEvent._id,
             title: calEvent.title,

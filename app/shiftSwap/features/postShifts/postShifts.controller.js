@@ -61,6 +61,7 @@ function PostCtrl(routes) {
         Date.parse(end);
         vm.shift.end = end;
 
+        console.log(vm.shift);
 		routes.createShift(vm.shift);
 		resetView();
 	}
